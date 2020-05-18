@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/yousef-401-advanced-javascript/notes/pull/1)
 
 
 ### Modules
