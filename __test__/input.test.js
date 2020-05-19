@@ -5,6 +5,7 @@ const Input = require('../lib/input.js');
 
 jest.mock('minimist');
 minimist.mockImplementation(()=>{
+  console.log(minimist);
   return {
     a:'i hope to get full mark',
   };
@@ -22,7 +23,7 @@ describe('input Module', ()=>{
   describe('valid()', ()=>{
     it('respect a proper object', () =>{
       const note = new Input();
-      //   console.log(note);
+      // console.log(minimist.a);
       expect(note.valid()).toBeFalsy();
     });
   });
