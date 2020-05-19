@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/yousef-401-advanced-javascript/notes#readme",
   "dependencies": {
     "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "jest": "^26.0.1"
   }
 }

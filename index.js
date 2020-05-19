@@ -4,5 +4,6 @@ const executing = require('./lib/notes.js');
 
 
 let note = new noteValidation;
-console.log(note);
-new executing(note);
+// console.log(note);
+let theExecute = new executing(note);
+console.log(theExecute.execute(note));
