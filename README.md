@@ -7,6 +7,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/yousef-401-advanced-javascript/notes/pull/1)
+- [class02 PR](https://github.com/yousef-401-advanced-javascript/notes/pull/2)
 
 
 ### Modules
