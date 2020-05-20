@@ -14,6 +14,5 @@ mongoose.connect(process.env.DB_URI, {
 
 
 let note = new noteValidation;
-// console.log(note);
 let theExecute = new executing(note);
 console.log(theExecute.execute(note));
