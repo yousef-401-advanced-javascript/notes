@@ -1,28 +1,32 @@
 'use strict';
 
-const minimist = require('minimist');
 const Input = require('../lib/input.js');
-
+jest.resetAllMocks();
 jest.mock('minimist');
+const minimist = require('minimist');
 minimist.mockImplementation(()=>{
+  // console.log(minimist);
   return {
     a:'i hope to get full mark',
   };
 });
+// console.log(minimist);
+
+
 describe('input Module', ()=>{
     
-  describe('valid()', ()=>{
-    it('respect a proper object', () =>{
+  describe('invalid()', ()=>{
+    it('', () =>{
       const note = new Input();
       //   console.log(note);
       expect(note.valid({u:'hey'})).toBeFalsy();
     });
   });
 
-  describe('valid()', ()=>{
+  describe('invalid()', ()=>{
     it('respect a proper object', () =>{
       const note = new Input();
-      //   console.log(note);
+      // console.log(minimist.a);
       expect(note.valid()).toBeFalsy();
     });
   });
@@ -42,11 +46,5 @@ describe('input Module', ()=>{
       expect(note.valid({ajhf:'hi'})).toBeFalsy();
     });
   });
-//   describe('new object with keys action payload', ()=>{
-//     it('hi', ()=>{
-//       const note = new Input();
-//       const obj = { a: 'mahmoud' };
-//       expect(note.checking().toEqual('mahmoud'));    
-//     });
-//   });
+
 });

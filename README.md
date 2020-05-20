@@ -6,11 +6,12 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/yousef-401-advanced-javascript/notes/pull/1)
-- [class02 PR](https://github.com/yousef-401-advanced-javascript/notes/pull/2)
+
+- [class03 PR](https://github.com/yousef-401-advanced-javascript/notes/pull/4)
 
 
 ### Modules
+#### mongoose
 #### `notes.js`
 #### `input.js`
 
@@ -27,14 +28,27 @@ notes return the note value
 
 #### How to initialize/run your application
 
-node index.js --add "write the note here"
-OR
-node index.js --a "write the note here"
-
+node index.js --add "write the note here" --category "note"
 return adding note: "your note"
+OR
+node index.js --a "write the note here" --category "note"
+return adding note: "your note"
+
+OR
+node index.js --list "the category"
+return (the notes with that category)
+
+OR
+node index.js --delete "id"
+will delete the note with that id
+
+
 
 
 
 #### UML
 
-![UML Image](./uml/lab01.jpg)
+![first patch](./uml/lab01.jpg)
+![second patch](./uml/notesLab03.jpg)
+
+
