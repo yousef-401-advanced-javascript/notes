@@ -6,5 +6,5 @@ const adding = new mongoose.Schema({
   category:{type:'string',required:true},
 
 });
-
-module.exports = mongoose.model('add', adding);
+module.exports.schema = adding.obj;
+module.exports.model = mongoose.model('add', adding);
