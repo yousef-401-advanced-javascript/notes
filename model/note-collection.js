@@ -2,6 +2,7 @@
 
 const model = require('./note-schema.js').model;
 
+
 class Notes{
   constructor(){}
 
