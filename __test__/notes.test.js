@@ -10,7 +10,7 @@ describe('note Module',()=>{
     theNote.add();
     expect(console.log).not.toHaveBeenCalled();
   });
-  it('nothing will logges when the match input is empty', ()=>{
+  it('will logges when the match input', ()=>{
     const theNote = new outputNote();
     theNote.add({payload:'hi',id:'123'});
     expect(console.log).toHaveBeenCalled();

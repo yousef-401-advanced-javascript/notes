@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/yousef-401-advanced-javascript/notes#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.9.15"
   },
   "devDependencies": {
+    "@code-fellows/supergoose": "^1.0.2",
     "eslint": "^7.0.0",
     "jest": "^26.0.1"
   }
