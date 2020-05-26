@@ -19,4 +19,7 @@ if(note.action === 'add'){
 
 }
 let theExecute = new executing(note);
-console.log(theExecute.execute(note));
+theExecute.execute(note).then(()=>{
+  mongoose.disconnect();
+});
+  
